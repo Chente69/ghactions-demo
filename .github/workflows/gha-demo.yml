@@ -2,12 +2,12 @@ name: CI Sim ple Sample
 on: 
   push:
     branches:
-      -main
-      -develop
-      -'release/**'
+      - main
+      - develop
+      - 'release/**'
   pull_request:
     branches:
-      -main
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
