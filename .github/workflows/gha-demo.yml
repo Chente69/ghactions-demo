@@ -1,12 +1,20 @@
 name: CI Simple Sample
 on: workflow_dispatch
 jobs:
-  saludo:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Display Message
-        run: |
-          echo "Welcome to GitHub Actions"
-          echo "Display Message 1"
-          echo "Display Message 2"
+      - name: Build Step
+        run: echo "Deno Build"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Phase
+        run:  echo "Running test cases"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy Phase
+        run:  echo "Deploying the app"
+    
         
