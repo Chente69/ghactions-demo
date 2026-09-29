@@ -1,11 +1,11 @@
-name: CI Simple Sample
+name: CI Sim ple Sample
 on: 
   push:
     branches:
       -main
       -develop
       -'release/**'
-  pull-request:
+  pull_request:
     branches:
       -main
 jobs:
