@@ -5,4 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Display Message
-        run: echo "Welcome to GitHub Actions"
+        run: |
+          echo "Welcome to GitHub Actions"
+          echo "Display Message 1"
+          echo "Display Message 2"
+        
