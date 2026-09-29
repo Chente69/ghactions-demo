@@ -1,0 +1,8 @@
+name: CI Simple Sample
+on: workflow_dispatch
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display Message
+        run: echo "Welcome to GitHub Actions"
