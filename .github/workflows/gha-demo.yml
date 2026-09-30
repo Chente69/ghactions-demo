@@ -1,4 +1,4 @@
-name: CI Sim ple Sample
+name: CI Simple Sample
 on: 
   push:
     branches:
