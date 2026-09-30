@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build Step
-        run: echo "Corriendo ghjob ${{MY_NAME}}"
+        run: echo "Corriendo ghjob ${{ vars.MY_NAME}}"
 
     
         
