@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build Step
-        run: echo "Deno Build"
+        run: echo "Corriendo ghjob ${{MY_NAME}}"
 
     
         
