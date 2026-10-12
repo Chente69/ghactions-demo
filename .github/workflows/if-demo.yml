@@ -4,6 +4,7 @@ on:
     branches: 
     - main
     - development
+    - production
 jobs:
   demo-if:
     runs-on: ubuntu-latest
