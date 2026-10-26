@@ -1,5 +1,14 @@
-name: GitHub Actions Demo
-on: push
+
+name: CI Simple Sample
+on: 
+  push:
+    branches:
+      - main
+      - develop
+      - 'release/**'
+  pull_request:
+    branches:
+      - main
 jobs:
   action-demo:
     runs-on: ubuntu-latest
