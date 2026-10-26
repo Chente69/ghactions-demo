@@ -1,0 +1,9 @@
+name: Or condition demo workflow
+on: push
+jobs:
+  demo-if:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run for Chente69
+        if:  github.actor == 'Chente69' ||  github.actor == 'javahometech'
+        run: echo "Running for either Chente69 or javahometech"

@@ -1,3 +1,4 @@
+
 name: CI Simple Sample
 on: 
   push:
@@ -9,11 +10,13 @@ on:
     branches:
       - main
 jobs:
-  build:
+  action-demo:
     runs-on: ubuntu-latest
     steps:
-      - name: Build Step
-        run: echo "Deno Build"
+      - name: Check out the code
+        uses: actions/checkout@v5
+      - name: Print index.html
+        run: cat index.html
 
     
         

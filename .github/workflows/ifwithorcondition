@@ -1,0 +1,9 @@
+name: If with or condition  demo workflow
+on: push
+jobs:
+  demo-if:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run for main or develop
+        if:  github.actor == 'Hari'  || github.actor == 'Chente69'
+        run: echo "Running for actor hari or Myselft"
