@@ -6,4 +6,4 @@ jobs:
     steps:
       - name: Run for main or develop
         if:  github.actor == 'Hari'  || github.actor == 'Chente69'
-        run: echo "Running for main branch"
+        run: echo "Running for actor hari or Myselft"
